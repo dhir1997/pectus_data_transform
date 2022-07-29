@@ -1,3 +1,4 @@
+from operator import index
 import numpy as np
 import pandas as pd
 import sys
@@ -55,27 +56,30 @@ def monthly(data_input_df, levels):
     #             print("{} {} sum is {}".format(level_name, month, sum))
     # Better way
     for level in range(0, levels):
+        hierarchy = ""
         if level > 0: 
             for level_name in level_repository[level-1]: #level = 0 points to level 1
                 previous_level_indexes = index_repository[level-1][level_repository[level-1].index(level_name)]
+                hierarchy = str(level_name) + " -> " + hierarchy
                 for level_names_beyond_1 in level_repository[level]:
                     index = index_repository[level][level_repository[level].index(level_names_beyond_1)]
                     index_intersection = intersection(index, previous_level_indexes)
-                    sum = 0
-                    for month in data_input_df.columns[6:7]:   #remove 7 after 6 for all months later
-                        for j in index_intersection:
-                            sum = sum + data_input_df.iloc[j][month]
-                    if sum != 0:
-                        print("{} {} sum is {}".format(level_name, month, sum))
+                    if(index_intersection != []):
+                        for month in data_input_df.columns[6:16]: #2018 data 
+                            sum = 0                   
+                            for j in index_intersection:
+                                sum = sum + data_input_df.iloc[j][month]                       
+                            # hierarchy = str(isin(level_repository, index_repository, level-1, index_intersection)) + " -> " + str(level_names_beyond_1)
+                            print("{} {} sum is {}".format(level_names_beyond_1, month, sum))
+
         else :
             for level_name in level_repository[0]: #level = 0 points to level 1
-                level_indexes = index_repository[0][level_repository[0].index(level_name)]
-                sum = 0
-                for month in data_input_df.columns[6:7]:   #remove 7 after 6 for all months later
+                level_indexes = index_repository[0][level_repository[0].index(level_name)]  
+                for month1 in data_input_df.columns[6:16]: #2018 data
+                    sum = 0
                     for j in level_indexes:
-                        sum = sum + data_input_df.iloc[j][month]
-                if sum != 0:
-                    print("{} {} sum is {}".format(level_name, month, sum))      
+                        sum = sum + data_input_df.iloc[j][month1]
+                    print("{} {} sum is {}".format(level_name, month1, sum))      
 
 
 def yearly(data_input_df):
@@ -89,6 +93,12 @@ def intersection(lst1, lst2):
 	temp = set(lst2)
 	lst3 = [value for value in lst1 if value in temp]
 	return lst3
+
+def isin(level_repository, index_repository, level, source_list):
+    for j in index_repository[level]:
+        if(set(source_list).issubset(set(j))):  
+            return(level_repository[level][index_repository[level].index(j)])
+
    
 
 if __name__ == '__main__' :
