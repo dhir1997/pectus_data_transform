@@ -23,11 +23,10 @@ def main(data_input_df, timeline, levels):
         # return (json.dumps(yearly(data_input_df), indent = 4))
 
 def monthly(data_input_df, levels):
-    
-    report_view = []
-    period_list = []
+
+    dictionary = {"report_view":[]}
     dummy = []
-    #print(data_input_df.columns[2])
+
     level_repository = list(np.zeros(levels))
     for i in range(levels):
         for j in data_input_df[data_input_df.columns[i+1]].unique(): #1+ because data has list order as 1st column
@@ -36,25 +35,14 @@ def monthly(data_input_df, levels):
         dummy = []
     print(level_repository)
     index_repository = []
+
     for level in range(levels):
         for level_name in level_repository[level]:
             dummy.append(data_input_df[data_input_df[data_input_df.columns[1+level]] == level_name].index.tolist()) #1+ because data has list order as first column
         index_repository.append(dummy)
         dummy = []
     print(index_repository)
-    # for level in range(levels): #level = 0 points to level 1
-    #     for level_name in level_repository[level]:
-    #         level_index = level_repository[level].index(level_name)
-    #         for month in data_input_df.columns[6:7]:   #remove 7 after 6 for all months later
-    #             sum = 0
-    #             # try :
-    #             #     print(index_repository[level_index][level])
-    #             # except :
-    #             #     print(level_index, level)
-    #             for j in (index_repository[level][level_index]):
-    #                 sum = sum + data_input_df.iloc[j][month]
-    #             print("{} {} sum is {}".format(level_name, month, sum))
-    # Better way
+
     for level in range(0, levels):
         if level > 0: 
             for level_name in level_repository[level-1]: #level = 0 points to level 1
@@ -64,7 +52,7 @@ def monthly(data_input_df, levels):
                     index_intersection = intersection(index, previous_level_indexes)
                     hierarchy = hierarchy_builder(level, level_repository, index_repository, index_intersection)
                     if(index_intersection != []):
-                        for month in data_input_df.columns[6:16]: #2018 data 
+                        for month in data_input_df.columns[6:7]: #2018 data 
                             sum = 0                   
                             for j in index_intersection:
                                 sum = sum + data_input_df.iloc[j][month]                       
@@ -74,7 +62,7 @@ def monthly(data_input_df, levels):
         else :
             for level_name in level_repository[0]: #level = 0 points to level 1
                 level_indexes = index_repository[0][level_repository[0].index(level_name)]  
-                for month1 in data_input_df.columns[6:16]: #2018 data
+                for month1 in data_input_df.columns[6:7]: #2018 data
                     sum = 0
                     for j in level_indexes:
                         sum = sum + data_input_df.iloc[j][month1]
@@ -98,6 +86,10 @@ def hierarchy_builder(level, level_repository, index_repository, index_intersect
     for i in range(level+1):
         hierarchy = str(isin(level_repository, index_repository, level-i, index_intersection)) + " -> " + hierarchy
     return hierarchy
+
+def json_builder(dictionary):
+    with open('json_data_test.json', 'w') as outfile:
+        json.dump(json.loads(dictionary, indent = 4), outfile)
 
 
 def isin(level_repository, index_repository, level, source_list):
