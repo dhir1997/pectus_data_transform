@@ -56,21 +56,20 @@ def monthly(data_input_df, levels):
     #             print("{} {} sum is {}".format(level_name, month, sum))
     # Better way
     for level in range(0, levels):
-        hierarchy = ""
         if level > 0: 
             for level_name in level_repository[level-1]: #level = 0 points to level 1
                 previous_level_indexes = index_repository[level-1][level_repository[level-1].index(level_name)]
-                hierarchy = str(level_name) + " -> " + hierarchy
                 for level_names_beyond_1 in level_repository[level]:
                     index = index_repository[level][level_repository[level].index(level_names_beyond_1)]
                     index_intersection = intersection(index, previous_level_indexes)
+                    hierarchy = hierarchy_builder(level, level_repository, index_repository, index_intersection)
                     if(index_intersection != []):
                         for month in data_input_df.columns[6:16]: #2018 data 
                             sum = 0                   
                             for j in index_intersection:
                                 sum = sum + data_input_df.iloc[j][month]                       
                             # hierarchy = str(isin(level_repository, index_repository, level-1, index_intersection)) + " -> " + str(level_names_beyond_1)
-                            print("{} {} sum is {}".format(level_names_beyond_1, month, sum))
+                            print("{} {} {}".format(hierarchy, month, sum))
 
         else :
             for level_name in level_repository[0]: #level = 0 points to level 1
@@ -94,12 +93,17 @@ def intersection(lst1, lst2):
 	lst3 = [value for value in lst1 if value in temp]
 	return lst3
 
+def hierarchy_builder(level, level_repository, index_repository, index_intersection):
+    hierarchy = ""
+    for i in range(level+1):
+        hierarchy = str(isin(level_repository, index_repository, level-i, index_intersection)) + " -> " + hierarchy
+    return hierarchy
+
+
 def isin(level_repository, index_repository, level, source_list):
     for j in index_repository[level]:
         if(set(source_list).issubset(set(j))):  
             return(level_repository[level][index_repository[level].index(j)])
-
-   
 
 if __name__ == '__main__' :
     path = sys.argv[1]
