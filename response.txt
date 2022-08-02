@@ -1,464 +1,188 @@
 monthly starts here 
 
-[['Financing Cash Flow', 'Investing Cash Flow'], ['Ausz.Untern.Eigner', 'Ausz.Anleihen/Kred', 'Ausz.Immat.Verm.', 'Ausz.SAV-Invest.', 'Einz.kfr.Finanzdisp. L1'], ['Ausz.Eigenkapital', 'Sonstige Kredite', 'Zugang Immat.Verm.', 'Zugang Sachanlagen', 'Einz.kfr.Finanzdisp.'], [6301, 6495, 6595, 6650, 6660, 5923, 6811, 6837, 6851, 6855, 6880, 6400, 6420, 6430], [9000, 1800, 2978, 3510, 71700, 71100, 1420, 71200]]
-[[[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]], [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 13, 14, 15, 16, 17]], [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 13, 14, 15, 16, 17]], [[0, 1], [2, 6], [3], [4], [5], [7], [8, 9, 10], [11], [12], [13], [14], [15], [16], [17]], [[0], [1, 2, 3], [4, 5], [6, 7, 8, 11, 14, 15, 16, 17], [9], [10], [12], [13]]]
+[['Net Result BOP', 'Operating Cash Flow', 'Financing Cash Flow', 'Investing Cash Flow', 'Free Cash Flow EOP'], [nan, 'Sonst.Auszahlungen', 'Ausz.Lieferanten', ' Sonst.Einzahlungen', ' Einz.Kunden', 'Ausz.Untern.Eigner', 'Ausz.Anleihen/Kred', 'Ausz.Immat.Verm.', 'Ausz.SAV-Invest.', 'Einz.kfr.Finanzdisp. L1'], [nan, 'Steuern (o. USt/Ertr)', 'Andere Lief.u.Leist.', 'Sonstige Korrekturen', 'Sonstige Forderungen', 'Forderungen a.L.u.L.', 'Fordgs.-Korrekturen', 'Ausz.Eigenkapital', 'Sonstige Kredite', 'Zugang Immat.Verm.', 'Zugang Sachanlagen', 'Einz.kfr.Finanzdisp.'], [nan, 6837.0, 6826.0, 6303.0, 6820.0, 6821.0, 6310.0, 6311.0, 6318.0, 6330.0, 6335.0, 6345.0, 6601.0, 6304.0, 6440.0, 6800.0, 6805.0, 6810.0, 6815.0, 6838.0, 6845.0, 6850.0, 6851.0, 6855.0, 6880.0, 6400.0, 6420.0, 6430.0, 6436.0, 6960.0, 6595.0, 6650.0, 6660.0, 6301.0, 6495.0, 5923.0, 6811.0], [nan, 71200.0, 3510.0, 3511.0, 3820.0, 71800.0, 71501.0, 1298.0, 70000.0, 6855.0, 71100.0, 6821.0, 9000.0, 7795.0, 6827.0, 6826.0, 6825.0, 1800.0, 6837.0, 6303.0, 1434.0, 6830.0, 6650.0, 6595.0, 6600.0, 1310.0, 71700.0, 3096.0, 3095.0, 70800.0, 2978.0, 1420.0]]
+[[[0], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74], [75, 76, 77, 78, 79, 80], [81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92], [93]], [[], [1, 2, 3, 4, 5, 6, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], [57, 58, 70, 71, 74], [59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 72, 73], [75, 76, 77], [78, 79, 80], [81, 82, 83], [84, 85, 86], [87, 88, 89, 90, 91, 92]], [[], [1, 2, 3, 4, 5, 6, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], [31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56], [57, 58, 70, 71, 74], [59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], [72, 73], [75, 76, 77], [78, 79, 80], [81, 82, 83], [84, 85, 86], [87, 88, 89, 90, 91, 92]], [[], [1, 86], [2, 3, 4], [5, 6, 7], [8, 9], [10, 11, 12], [13], [14, 15], [16, 17], [18, 19, 20], [21, 22], [23, 24], [25, 26, 27], [28, 29], [30, 31, 32], [33, 51, 62], [34, 52, 63], [35, 53, 64], [36, 54], [37, 55, 65], [38, 66], [39, 56, 67], [40, 68, 87], [41, 69, 88], [42, 70, 89], [43, 71, 90], [44, 72, 91], [45, 73, 92], [46, 57], [47, 58, 74], [48, 59, 78], [49, 60, 79], [50, 61, 80], [75, 76], [77, 81], [82], [83, 84, 85]], [[], [1, 88], [2, 12, 13, 14, 16, 57, 58, 59, 60, 61, 62, 63, 81, 82, 83, 86, 89, 90, 91, 92], [3, 17, 64], [4], [5, 68], [6, 72], [7, 8], [9, 66], [10, 15, 19], [11, 67, 85], [18], [20, 21, 75], [22, 23], [24], [25], [26, 28, 32], [27, 29, 36, 41, 43, 44, 46, 50, 51, 53, 56, 74, 76, 77, 78], [30], [31], [33, 35], [34], [37, 38, 39, 40, 42, 47, 52, 54], [45, 49], [48], [55], [65, 84], [69], [70, 71], [73], [79, 80], [87]]]
+Net Result BOP 03-2018 sum is -114189.32
+Operating Cash Flow 03-2018 sum is -923729.2637938401
 Financing Cash Flow 03-2018 sum is -83.57327826511488
-Financing Cash Flow 04-2018 sum is -58.8753135977732
-Financing Cash Flow 05-2018 sum is -88.02787250120521
-Financing Cash Flow 06-2018 sum is -108.76415182661594
-Financing Cash Flow 07-2018 sum is -170.81572267809796
-Financing Cash Flow 08-2018 sum is -146.52111364084018
-Financing Cash Flow 09-2018 sum is -200.8223310659574
-Financing Cash Flow 10-2018 sum is -149.59558053848832
-Financing Cash Flow 11-2018 sum is -256.86806598248904
-Financing Cash Flow 12-2018 sum is -474.86313565154785
 Investing Cash Flow 03-2018 sum is -62.17615344801235
-Investing Cash Flow 04-2018 sum is -43.80156682310041
-Investing Cash Flow 05-2018 sum is -65.49024547026339
-Investing Cash Flow 06-2018 sum is -80.91745033815913
-Investing Cash Flow 07-2018 sum is -127.08206265255261
-Investing Cash Flow 08-2018 sum is -109.0075611992509
-Investing Cash Flow 09-2018 sum is -149.40612994185435
-Investing Cash Flow 10-2018 sum is -111.29487754685908
-Investing Cash Flow 11-2018 sum is -191.10257031867607
-Investing Cash Flow 12-2018 sum is -353.2847316987365
+Free Cash Flow EOP 03-2018 sum is -1038064.3332255532
+Operating Cash Flow -> Sonst.Auszahlungen ->  03-2018 -503116.30887973995
+Operating Cash Flow -> Ausz.Lieferanten ->  03-2018 -419425.58305877855
+Operating Cash Flow ->  Sonst.Einzahlungen ->  03-2018 -363.7872689706616
+Operating Cash Flow ->  Einz.Kunden ->  03-2018 -823.5845863509408
 Financing Cash Flow -> Ausz.Untern.Eigner ->  03-2018 -49.017476719585446
-Financing Cash Flow -> Ausz.Untern.Eigner ->  04-2018 -34.53160356450657
-Financing Cash Flow -> Ausz.Untern.Eigner ->  05-2018 -51.63018946456223
-Financing Cash Flow -> Ausz.Untern.Eigner ->  06-2018 -63.79245125665977
-Financing Cash Flow -> Ausz.Untern.Eigner ->  07-2018 -100.18699617300841
-Financing Cash Flow -> Ausz.Untern.Eigner ->  08-2018 -85.93769953637877
-Financing Cash Flow -> Ausz.Untern.Eigner ->  09-2018 -117.78649996918266
-Financing Cash Flow -> Ausz.Untern.Eigner ->  10-2018 -87.74093871412812
-Financing Cash Flow -> Ausz.Untern.Eigner ->  11-2018 -150.6584964198698
-Financing Cash Flow -> Ausz.Untern.Eigner ->  12-2018 -278.51716696992605
 Financing Cash Flow -> Ausz.Anleihen/Kred ->  03-2018 -34.555801545529434
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  04-2018 -24.343710033266632
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  05-2018 -36.397683036642974
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  06-2018 -44.971700569956184
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  07-2018 -70.62872650508956
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  08-2018 -60.58341410446141
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  09-2018 -83.03583109677474
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  10-2018 -61.854641824360186
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  11-2018 -106.20956956261921
-Financing Cash Flow -> Ausz.Anleihen/Kred ->  12-2018 -196.34596868162183
 Investing Cash Flow -> Ausz.Immat.Verm. ->  03-2018 -24.360768859750337
-Investing Cash Flow -> Ausz.Immat.Verm. ->  04-2018 -17.161560918441943
-Investing Cash Flow -> Ausz.Immat.Verm. ->  05-2018 -25.65923821265916
-Investing Cash Flow -> Ausz.Immat.Verm. ->  06-2018 -31.70365477910144
-Investing Cash Flow -> Ausz.Immat.Verm. ->  07-2018 -49.791062695566474
-Investing Cash Flow -> Ausz.Immat.Verm. ->  08-2018 -42.70942885780806
-Investing Cash Flow -> Ausz.Immat.Verm. ->  09-2018 -58.5376868124622
-Investing Cash Flow -> Ausz.Immat.Verm. ->  10-2018 -43.60560499227738
-Investing Cash Flow -> Ausz.Immat.Verm. ->  11-2018 -74.8744540449901
-Investing Cash Flow -> Ausz.Immat.Verm. ->  12-2018 -138.41782119551428
 Investing Cash Flow -> Ausz.SAV-Invest. ->  03-2018 -17.173586862289337
-Investing Cash Flow -> Ausz.SAV-Invest. ->  04-2018 -12.098368439113099
-Investing Cash Flow -> Ausz.SAV-Invest. ->  05-2018 -18.088967503540115
-Investing Cash Flow -> Ausz.SAV-Invest. ->  06-2018 -22.350093805968367
-Investing Cash Flow -> Ausz.SAV-Invest. ->  07-2018 -35.1011556774308
-Investing Cash Flow -> Ausz.SAV-Invest. ->  08-2018 -30.108823352460085
-Investing Cash Flow -> Ausz.SAV-Invest. ->  09-2018 -41.26725453449467
-Investing Cash Flow -> Ausz.SAV-Invest. ->  10-2018 -30.740599745800793
-Investing Cash Flow -> Ausz.SAV-Invest. ->  11-2018 -52.78416899364262
-Investing Cash Flow -> Ausz.SAV-Invest. ->  12-2018 -97.58027299038051
 Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  03-2018 -20.641797725972676
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  04-2018 -14.54163746554537
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  05-2018 -21.742039754064116
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  06-2018 -26.863701753089316
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  07-2018 -42.189844279555324
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  08-2018 -36.18930898898276
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  09-2018 -49.60118859489751
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  10-2018 -36.94867280878091
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  11-2018 -63.443947280043346
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 ->  12-2018 -117.2866375128417
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) ->  03-2018 -476459.18578337773
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen ->  03-2018 -26657.123096362262
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. ->  03-2018 -419425.58305877855
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen ->  03-2018 -363.7872689706616
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. ->  03-2018 -774.5877804479009
+Operating Cash Flow ->  Einz.Kunden -> Fordgs.-Korrekturen ->  03-2018 -48.99680590303988
 Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  03-2018 -49.017476719585446
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  04-2018 -34.53160356450657
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  05-2018 -51.63018946456223
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  06-2018 -63.79245125665977
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  07-2018 -100.18699617300841
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  08-2018 -85.93769953637877
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  09-2018 -117.78649996918266
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  10-2018 -87.74093871412812
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  11-2018 -150.6584964198698
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital ->  12-2018 -278.51716696992605
 Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  03-2018 -34.555801545529434
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  04-2018 -24.343710033266632
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  05-2018 -36.397683036642974
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  06-2018 -44.971700569956184
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  07-2018 -70.62872650508956
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  08-2018 -60.58341410446141
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  09-2018 -83.03583109677474
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  10-2018 -61.854641824360186
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  11-2018 -106.20956956261921
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite ->  12-2018 -196.34596868162183
 Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  03-2018 -24.360768859750337
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  04-2018 -17.161560918441943
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  05-2018 -25.65923821265916
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  06-2018 -31.70365477910144
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  07-2018 -49.791062695566474
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  08-2018 -42.70942885780806
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  09-2018 -58.5376868124622
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  10-2018 -43.60560499227738
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  11-2018 -74.8744540449901
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. ->  12-2018 -138.41782119551428
 Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  03-2018 -17.173586862289337
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  04-2018 -12.098368439113099
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  05-2018 -18.088967503540115
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  06-2018 -22.350093805968367
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  07-2018 -35.1011556774308
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  08-2018 -30.108823352460085
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  09-2018 -41.26725453449467
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  10-2018 -30.740599745800793
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  11-2018 -52.78416899364262
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen ->  12-2018 -97.58027299038051
 Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  03-2018 -20.641797725972676
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  04-2018 -14.54163746554537
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  05-2018 -21.742039754064116
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  06-2018 -26.863701753089316
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  07-2018 -42.189844279555324
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  08-2018 -36.18930898898276
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  09-2018 -49.60118859489751
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  10-2018 -36.94867280878091
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  11-2018 -63.443947280043346
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. ->  12-2018 -117.2866375128417
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  03-2018 -34.54122926066012
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  04-2018 -24.333444217932744
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  05-2018 -36.38233402483972
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  06-2018 -44.952735869313955
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  07-2018 -70.59894215986947
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  08-2018 -60.557865897526526
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  09-2018 -83.00081463843824
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  10-2018 -61.828557536893534
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  11-2018 -106.16478066945824
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 ->  12-2018 -196.26316899935134
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  03-2018 -14.476247458925332
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  04-2018 -10.198159346573824
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  05-2018 -15.247855439722509
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  06-2018 -18.839715387345812
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  07-2018 -29.58805401313894
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  08-2018 -25.379833638852254
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  09-2018 -34.785685330744414
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  10-2018 -25.912381177234586
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  11-2018 -44.493715750411575
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 ->  12-2018 -82.25399797057472
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  03-2018 -12.883860238443546
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  04-2018 -9.076361818450703
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  05-2018 -13.570591341353033
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  06-2018 -16.767346694737775
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  07-2018 -26.333368071693656
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  08-2018 -22.588051938578506
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  09-2018 -30.95925994436253
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  10-2018 -23.06201924773878
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  11-2018 -39.599407017866305
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 ->  12-2018 -73.2060581938115
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  03-2018 -11.466635612214755
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  04-2018 -8.077962018421125
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  05-2018 -12.0778262938042
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  06-2018 -14.92293855831662
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  07-2018 -23.436697583807355
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  08-2018 -20.10336622533487
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  09-2018 -27.55374135048265
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  10-2018 -20.525197130487516
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  11-2018 -35.24347224590101
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 ->  12-2018 -65.15339179249224
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  03-2018 -10.205305694871132
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  04-2018 -7.189386196394802
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  05-2018 -10.749265401485738
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  06-2018 -13.281415316901791
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  07-2018 -20.858660849588546
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  08-2018 -17.891995940548036
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  09-2018 -24.522829801929557
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  10-2018 -18.26742544613389
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  11-2018 -31.3666902988519
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 ->  12-2018 -57.9865186953181
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  03-2018 -9.082722068435308
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  04-2018 -6.398553714791373
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  05-2018 -9.566846207322307
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  06-2018 -11.820459632042594
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  07-2018 -18.564208156133805
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  08-2018 -15.923876387087752
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  09-2018 -21.825318523717307
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  10-2018 -16.25800864705916
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  11-2018 -27.91635436597819
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 ->  12-2018 -51.60800163883311
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  03-2018 -8.083622640907423
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  04-2018 -5.694712806164322
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  05-2018 -8.514493124516854
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  06-2018 -10.52020907251791
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  07-2018 -16.522145258959085
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  08-2018 -14.172249984508099
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  09-2018 -19.424533486108405
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  10-2018 -14.469627695882654
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  11-2018 -24.84555538572059
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 ->  12-2018 -45.93112145856147
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  03-2018 -7.194424150407607
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  04-2018 -5.068294397486246
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  05-2018 -7.577898880819999
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  06-2018 -9.36298607454094
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  07-2018 -14.704709280473587
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  08-2018 -12.613302486212207
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  09-2018 -17.287834802636482
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  10-2018 -12.877968649335562
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  11-2018 -22.112544293291325
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 ->  12-2018 -40.878698098119706
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  03-2018 -12.101740863400636
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  04-2018 -8.525378006011616
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  05-2018 -12.746783707427321
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  06-2018 -15.749478875985314
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  07-2018 -24.73479148068462
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  08-2018 -21.216836112057553
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  09-2018 -29.079866921514828
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  10-2018 -21.66203106504735
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  11-2018 -37.19551075574533
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 ->  12-2018 -68.76205807084716
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  03-2018 -5.071845998888701
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  04-2018 -3.572990433101482
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  05-2018 -5.342183796112795
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  06-2018 -6.600614929983052
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  07-2018 -10.366364196746185
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  08-2018 -8.891987240402534
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  09-2018 -12.187387612979839
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  10-2018 -9.078568680753442
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  11-2018 -15.58865823789729
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 ->  12-2018 -28.818214919533354
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  03-2018 -4.513942939010944
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  04-2018 -3.179961485460319
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  05-2018 -4.754543578540387
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  06-2018 -5.874547287684916
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  07-2018 -9.226064135104105
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  08-2018 -7.9138686439582555
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  09-2018 -10.846774975552057
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  10-2018 -8.079926125870564
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  11-2018 -13.873905831728589
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 ->  12-2018 -25.648211278384686
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  03-2018 -4.01740921571974
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  04-2018 -2.830165722059684
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  05-2018 -4.2315437849009445
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  06-2018 -5.228347086039575
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  07-2018 -8.211197080242654
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  08-2018 -7.043343093122847
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  09-2018 -9.65362972824133
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  10-2018 -7.191134252024802
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  11-2018 -12.347776190238445
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 ->  12-2018 -22.826908037762372
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  03-2018 -3.575494201990568
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  04-2018 -2.518847492633119
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  05-2018 -3.7660739685618405
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  06-2018 -4.6532289065752215
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  07-2018 -7.307965401415962
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  08-2018 -6.268575352879334
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  09-2018 -8.591730458134785
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  10-2018 -6.400109484302074
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  11-2018 -10.989520809312216
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 ->  12-2018 -20.315948153608513
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  03-2018 -3.1821898397716057
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  04-2018 -2.241774268443476
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  05-2018 -3.351805832020038
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  06-2018 -4.141373726851947
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  07-2018 -6.504089207260206
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  08-2018 -5.579032064062607
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  09-2018 -7.646640107739959
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  10-2018 -5.696097441028845
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  11-2018 -9.780673520287872
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 ->  12-2018 -18.081193856711575
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  03-2018 -2.832148957396729
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  04-2018 -1.9951790989146936
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  05-2018 -2.983107190497834
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  06-2018 -3.6858226168982333
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  07-2018 -5.788639394461583
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  08-2018 -4.965338537015721
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  09-2018 -6.8055096958885635
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  10-2018 -5.069526722515673
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  11-2018 -8.704799433056206
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 ->  12-2018 -16.092262532473303
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  03-2018 -2.5206125720830888
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  04-2018 -1.7757093980340772
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  05-2018 -2.654965399543072
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  06-2018 -3.2803821290394275
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  07-2018 -5.1518890610708095
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  08-2018 -4.4191512979439915
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  09-2018 -6.056903629340821
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  10-2018 -4.511878783038949
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  11-2018 -7.747271495420023
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 ->  12-2018 -14.322113653901239
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  03-2018 -18.275782677597945
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  04-2018 -12.874838210546425
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  05-2018 -19.249912182454878
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  06-2018 -23.784516332970348
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  07-2018 -37.35393765072458
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  08-2018 -32.04119888758017
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  09-2018 -43.91577494097262
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  10-2018 -32.713522506292875
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  11-2018 -56.17184162405198
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 9000 ->  12-2018 -103.84294656050335
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  03-2018 -16.26544658306217
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  04-2018 -11.458606007386319
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  05-2018 -17.13242184238484
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  06-2018 -21.16821953634361
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  07-2018 -33.24500450914488
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  08-2018 -28.516667009946353
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  09-2018 -39.08503969746563
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  10-2018 -29.11503503060066
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  11-2018 -49.99293904540626
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301 -> 1800 ->  12-2018 -92.42022243884799
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  03-2018 -14.476247458925332
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  04-2018 -10.198159346573824
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  05-2018 -15.247855439722509
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  06-2018 -18.839715387345812
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  07-2018 -29.58805401313894
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  08-2018 -25.379833638852254
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  09-2018 -34.785685330744414
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  10-2018 -25.912381177234586
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  11-2018 -44.493715750411575
-Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495 -> 1800 ->  12-2018 -82.25399797057472
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  03-2018 -9.082722068435308
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  04-2018 -6.398553714791373
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  05-2018 -9.566846207322307
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  06-2018 -11.820459632042594
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  07-2018 -18.564208156133805
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  08-2018 -15.923876387087752
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  09-2018 -21.825318523717307
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  10-2018 -16.25800864705916
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  11-2018 -27.91635436597819
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495 -> 3510 ->  12-2018 -51.60800163883311
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  03-2018 -12.883860238443546
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  04-2018 -9.076361818450703
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  05-2018 -13.570591341353033
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  06-2018 -16.767346694737775
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  07-2018 -26.333368071693656
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  08-2018 -22.588051938578506
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  09-2018 -30.95925994436253
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  10-2018 -23.06201924773878
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  11-2018 -39.599407017866305
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595 -> 1800 ->  12-2018 -73.2060581938115
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  03-2018 -11.466635612214755
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  04-2018 -8.077962018421125
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  05-2018 -12.0778262938042
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  06-2018 -14.92293855831662
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  07-2018 -23.436697583807355
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  08-2018 -20.10336622533487
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  09-2018 -27.55374135048265
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  10-2018 -20.525197130487516
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  11-2018 -35.24347224590101
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650 -> 2978 ->  12-2018 -65.15339179249224
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  03-2018 -10.205305694871132
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  04-2018 -7.189386196394802
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  05-2018 -10.749265401485738
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  06-2018 -13.281415316901791
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  07-2018 -20.858660849588546
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  08-2018 -17.891995940548036
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  09-2018 -24.522829801929557
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  10-2018 -18.26742544613389
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  11-2018 -31.3666902988519
-Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660 -> 2978 ->  12-2018 -57.9865186953181
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  03-2018 -8.083622640907423
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  04-2018 -5.694712806164322
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  05-2018 -8.514493124516854
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  06-2018 -10.52020907251791
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  07-2018 -16.522145258959085
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  08-2018 -14.172249984508099
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  09-2018 -19.424533486108405
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  10-2018 -14.469627695882654
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  11-2018 -24.84555538572059
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923 -> 3510 ->  12-2018 -45.93112145856147
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  03-2018 -7.194424150407607
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  04-2018 -5.068294397486246
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  05-2018 -7.577898880819999
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  06-2018 -9.36298607454094
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  07-2018 -14.704709280473587
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  08-2018 -12.613302486212207
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  09-2018 -17.287834802636482
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  10-2018 -12.877968649335562
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  11-2018 -22.112544293291325
-Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811 -> 3510 ->  12-2018 -40.878698098119706
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  03-2018 -6.4030374938627705
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  04-2018 -4.51078201376276
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  05-2018 -6.744330003929799
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  06-2018 -8.333057606341436
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  07-2018 -13.087191259621493
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  08-2018 -11.225839212728864
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  09-2018 -15.386172974346469
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  10-2018 -11.46139209790865
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  11-2018 -19.68016442102928
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71700 ->  12-2018 -36.38204130732654
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  03-2018 -5.698703369537866
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  04-2018 -4.014595992248856
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  05-2018 -6.002453703497522
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  06-2018 -7.4164212696438785
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  07-2018 -11.64760022106313
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  08-2018 -9.990996899328689
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  09-2018 -13.693693947168358
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  10-2018 -10.2006389671387
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  11-2018 -17.515346334716057
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811 -> 71100 ->  12-2018 -32.38001676352062
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  03-2018 -5.071845998888701
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  04-2018 -3.572990433101482
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  05-2018 -5.342183796112795
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  06-2018 -6.600614929983052
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  07-2018 -10.366364196746185
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  08-2018 -8.891987240402534
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  09-2018 -12.187387612979839
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  10-2018 -9.078568680753442
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  11-2018 -15.58865823789729
-Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837 -> 3510 ->  12-2018 -28.818214919533354
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  03-2018 -4.513942939010944
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  04-2018 -3.179961485460319
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  05-2018 -4.754543578540387
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  06-2018 -5.874547287684916
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  07-2018 -9.226064135104105
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  08-2018 -7.9138686439582555
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  09-2018 -10.846774975552057
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  10-2018 -8.079926125870564
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  11-2018 -13.873905831728589
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851 -> 1420 ->  12-2018 -25.648211278384686
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  03-2018 -4.01740921571974
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  04-2018 -2.830165722059684
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  05-2018 -4.2315437849009445
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  06-2018 -5.228347086039575
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  07-2018 -8.211197080242654
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  08-2018 -7.043343093122847
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  09-2018 -9.65362972824133
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  10-2018 -7.191134252024802
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  11-2018 -12.347776190238445
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855 -> 71200 ->  12-2018 -22.826908037762372
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  03-2018 -3.575494201990568
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  04-2018 -2.518847492633119
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  05-2018 -3.7660739685618405
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  06-2018 -4.6532289065752215
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  07-2018 -7.307965401415962
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  08-2018 -6.268575352879334
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  09-2018 -8.591730458134785
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  10-2018 -6.400109484302074
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  11-2018 -10.989520809312216
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880 -> 3510 ->  12-2018 -20.315948153608513
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  03-2018 -3.1821898397716057
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  04-2018 -2.241774268443476
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  05-2018 -3.351805832020038
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  06-2018 -4.141373726851947
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  07-2018 -6.504089207260206
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  08-2018 -5.579032064062607
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  09-2018 -7.646640107739959
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  10-2018 -5.696097441028845
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  11-2018 -9.780673520287872
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400 -> 3510 ->  12-2018 -18.081193856711575
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  03-2018 -2.832148957396729
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  04-2018 -1.9951790989146936
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  05-2018 -2.983107190497834
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  06-2018 -3.6858226168982333
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  07-2018 -5.788639394461583
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  08-2018 -4.965338537015721
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  09-2018 -6.8055096958885635
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  10-2018 -5.069526722515673
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  11-2018 -8.704799433056206
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420 -> 3510 ->  12-2018 -16.092262532473303
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  03-2018 -2.5206125720830888
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  04-2018 -1.7757093980340772
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  05-2018 -2.654965399543072
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  06-2018 -3.2803821290394275
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  07-2018 -5.1518890610708095
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  08-2018 -4.4191512979439915
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  09-2018 -6.056903629340821
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  10-2018 -4.511878783038949
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  11-2018 -7.747271495420023
-Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430 -> 3510 ->  12-2018 -14.322113653901239
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6837.0 ->  03-2018 -101628.49480000001
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6826.0 ->  03-2018 -242594.22945374122
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6303.0 ->  03-2018 -120513.95079964721
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6304.0 ->  03-2018 -8260.52171048051
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6440.0 ->  03-2018 -3461.9890195087896
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6303.0 ->  03-2018 -50507.46054412728
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6820.0 ->  03-2018 -84958.5993812765
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6821.0 ->  03-2018 -95499.37279955199
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6310.0 ->  03-2018 -25101.26294438215
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6311.0 ->  03-2018 -42222.83439874521
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6318.0 ->  03-2018 -33444.70712724608
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6330.0 ->  03-2018 -37594.17619142861
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6335.0 ->  03-2018 -18675.723285293614
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6345.0 ->  03-2018 -14793.040414281073
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6601.0 ->  03-2018 -16628.40597244602
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6440.0 ->  03-2018 -5823.411729715735
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6800.0 ->  03-2018 -2740.177012860115
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6805.0 ->  03-2018 -2438.7575414455023
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6810.0 ->  03-2018 -2170.494211886497
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6815.0 ->  03-2018 -1931.7398485789824
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6838.0 ->  03-2018 -1719.2484652352944
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6845.0 ->  03-2018 -1362.8427219661826
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6850.0 ->  03-2018 -1380.218434643132
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6851.0 ->  03-2018 -1079.5077200694134
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6855.0 ->  03-2018 -960.7618708617779
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6880.0 ->  03-2018 -855.0780650669823
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6400.0 ->  03-2018 -761.0194779096142
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6420.0 ->  03-2018 -677.3073353395566
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6430.0 ->  03-2018 -602.8035284522055
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6436.0 ->  03-2018 -536.4951403224628
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6960.0 ->  03-2018 -477.4806748869919
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6595.0 ->  03-2018 -424.9578006494228
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6650.0 ->  03-2018 -378.2124425779863
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6660.0 ->  03-2018 -336.6090738944078
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6880.0 ->  03-2018 -32.728488735682774
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6400.0 ->  03-2018 -29.12835497475767
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6436.0 ->  03-2018 -148.8866867629742
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6960.0 ->  03-2018 -153.04373849724698
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6800.0 ->  03-2018 -83.13921100490893
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6805.0 ->  03-2018 -73.99389779436895
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6810.0 ->  03-2018 -65.85456903698837
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6838.0 ->  03-2018 -58.61056644291965
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6845.0 ->  03-2018 -52.16340413419849
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6850.0 ->  03-2018 -46.425429679436654
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6851.0 ->  03-2018 -41.31863241469862
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6855.0 ->  03-2018 -36.77358284908177
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6595.0 ->  03-2018 -117.93314458495186
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6650.0 ->  03-2018 -104.96049868060716
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6660.0 ->  03-2018 -93.41484382574038
+Operating Cash Flow ->  Einz.Kunden -> Fordgs.-Korrekturen -> 6420.0 ->  03-2018 -25.924235927534326
+Operating Cash Flow ->  Einz.Kunden -> Fordgs.-Korrekturen -> 6430.0 ->  03-2018 -23.07256997550555
+Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301.0 ->  03-2018 -34.54122926066012
+Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495.0 ->  03-2018 -14.476247458925332
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595.0 ->  03-2018 -12.883860238443546
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650.0 ->  03-2018 -11.466635612214755
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660.0 ->  03-2018 -10.205305694871132
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495.0 ->  03-2018 -9.082722068435308
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923.0 ->  03-2018 -8.083622640907423
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811.0 ->  03-2018 -7.194424150407607
+Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837.0 ->  03-2018 -5.071845998888701
+Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811.0 ->  03-2018 -12.101740863400636
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851.0 ->  03-2018 -4.513942939010944
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855.0 ->  03-2018 -4.01740921571974
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880.0 ->  03-2018 -3.575494201990568
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400.0 ->  03-2018 -3.1821898397716057
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420.0 ->  03-2018 -2.832148957396729
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430.0 ->  03-2018 -2.5206125720830888
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6837.0 -> 71200.0 ->  03-2018 -101628.49480000001
+Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6837.0 -> 3510.0 ->  03-2018 -5.071845998888701
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6826.0 -> 3510.0 ->  03-2018 -90449.36037200001
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6826.0 -> 3511.0 ->  03-2018 -80499.93073108
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6826.0 -> 3820.0 ->  03-2018 -71644.9383506612
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6303.0 -> 71800.0 ->  03-2018 -63763.99513208847
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6303.0 -> 71501.0 ->  03-2018 -56749.95566755874
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6303.0 -> 1298.0 ->  03-2018 -50507.46054412728
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6820.0 -> 1298.0 ->  03-2018 -44951.63988427328
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6820.0 -> 70000.0 ->  03-2018 -40006.95949700322
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6821.0 -> 3510.0 ->  03-2018 -28203.666229642866
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6821.0 -> 6855.0 ->  03-2018 -35606.19395233287
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6821.0 -> 71100.0 ->  03-2018 -31689.512617576253
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6310.0 -> 3510.0 ->  03-2018 -25101.26294438215
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6311.0 -> 3510.0 ->  03-2018 -22340.124020500112
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6311.0 -> 6855.0 ->  03-2018 -19882.7103782451
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6318.0 -> 3510.0 ->  03-2018 -17695.61223663814
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6318.0 -> 3511.0 ->  03-2018 -15749.094890607943
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6330.0 -> 6855.0 ->  03-2018 -12474.858062850552
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6330.0 -> 6821.0 ->  03-2018 -14016.69445264107
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6330.0 -> 9000.0 ->  03-2018 -11102.623675936991
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6335.0 -> 9000.0 ->  03-2018 -9881.335071583922
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6335.0 -> 7795.0 ->  03-2018 -8794.388213709692
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6345.0 -> 7795.0 ->  03-2018 -7827.005510201626
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6345.0 -> 6827.0 ->  03-2018 -6966.034904079447
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6601.0 -> 6826.0 ->  03-2018 -6199.771064630708
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6601.0 -> 6825.0 ->  03-2018 -5517.79624752133
+Operating Cash Flow -> Ausz.Lieferanten -> Andere Lief.u.Leist. -> 6601.0 -> 1800.0 ->  03-2018 -4910.838660293984
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6304.0 -> 6825.0 ->  03-2018 -4370.646407661646
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6304.0 -> 1800.0 ->  03-2018 -3889.875302818865
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6440.0 -> 6825.0 ->  03-2018 -2742.2415023529124
+Operating Cash Flow -> Sonst.Auszahlungen -> Steuern (o. USt/Ertr) -> 6440.0 -> 6837.0 ->  03-2018 -3461.9890195087896
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6440.0 -> 6303.0 ->  03-2018 -3081.170227362823
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6800.0 -> 3510.0 ->  03-2018 -83.13921100490893
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6800.0 -> 1800.0 ->  03-2018 -299.58207576602297
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6800.0 -> 1434.0 ->  03-2018 -2440.594937094092
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6805.0 -> 3510.0 ->  03-2018 -73.99389779436895
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6805.0 -> 6830.0 ->  03-2018 -2172.129494013742
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6805.0 -> 6650.0 ->  03-2018 -266.6280474317604
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6810.0 -> 3511.0 ->  03-2018 -65.85456903698837
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6810.0 -> 1800.0 ->  03-2018 -237.29896221426677
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6810.0 -> 1434.0 ->  03-2018 -1933.1952496722301
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6815.0 -> 1800.0 ->  03-2018 -1720.543772208285
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6815.0 -> 6650.0 ->  03-2018 -211.19607637069743
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6838.0 -> 6650.0 ->  03-2018 -1531.2839572653736
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6838.0 -> 1310.0 ->  03-2018 -187.9645079699207
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6838.0 -> 71700.0 ->  03-2018 -58.61056644291965
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6845.0 -> 70000.0 ->  03-2018 -52.16340413419849
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6845.0 -> 6650.0 ->  03-2018 -1362.8427219661826
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6850.0 -> 71100.0 ->  03-2018 -46.425429679436654
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6850.0 -> 1800.0 ->  03-2018 -167.28841209322943
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6850.0 -> 6650.0 ->  03-2018 -1212.9300225499026
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6851.0 -> 71800.0 ->  03-2018 -41.31863241469862
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6851.0 -> 6650.0 ->  03-2018 -1079.5077200694134
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6851.0 -> 1420.0 ->  03-2018 -4.513942939010944
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6855.0 -> 71200.0 ->  03-2018 -4.01740921571974
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6855.0 -> 1800.0 ->  03-2018 -960.7618708617779
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6855.0 -> 3096.0 ->  03-2018 -36.77358284908177
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6880.0 -> 3510.0 ->  03-2018 -3.575494201990568
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6880.0 -> 6650.0 ->  03-2018 -855.0780650669823
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6880.0 -> 3095.0 ->  03-2018 -32.728488735682774
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6400.0 -> 3510.0 ->  03-2018 -3.1821898397716057
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6400.0 -> 1800.0 ->  03-2018 -761.0194779096142
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6400.0 -> 3095.0 ->  03-2018 -29.12835497475767
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6420.0 -> 3510.0 ->  03-2018 -2.832148957396729
+Operating Cash Flow ->  Einz.Kunden -> Fordgs.-Korrekturen -> 6420.0 -> 71501.0 ->  03-2018 -25.924235927534326
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6420.0 -> 1800.0 ->  03-2018 -677.3073353395566
+Investing Cash Flow -> Einz.kfr.Finanzdisp. L1 -> Einz.kfr.Finanzdisp. -> 6430.0 -> 3510.0 ->  03-2018 -2.5206125720830888
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6430.0 -> 6595.0 ->  03-2018 -602.8035284522055
+Operating Cash Flow ->  Einz.Kunden -> Fordgs.-Korrekturen -> 6430.0 -> 70800.0 ->  03-2018 -23.07256997550555
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6436.0 -> 3510.0 ->  03-2018 -148.8866867629742
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6436.0 -> 1800.0 ->  03-2018 -536.4951403224628
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6960.0 -> 3510.0 ->  03-2018 -132.50915121904703
+Operating Cash Flow ->  Sonst.Einzahlungen -> Sonstige Forderungen -> 6960.0 -> 1800.0 ->  03-2018 -20.53458727819994
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6960.0 -> 6650.0 ->  03-2018 -477.4806748869919
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6595.0 -> 3510.0 ->  03-2018 -117.93314458495186
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6595.0 -> 1800.0 ->  03-2018 -12.883860238443546
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6595.0 -> 6600.0 ->  03-2018 -424.9578006494228
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6650.0 -> 3510.0 ->  03-2018 -104.96049868060716
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6650.0 -> 6595.0 ->  03-2018 -378.2124425779863
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6650.0 -> 2978.0 ->  03-2018 -11.466635612214755
+Operating Cash Flow ->  Einz.Kunden -> Forderungen a.L.u.L. -> 6660.0 -> 3510.0 ->  03-2018 -93.41484382574038
+Operating Cash Flow -> Sonst.Auszahlungen -> Sonstige Korrekturen -> 6660.0 -> 1800.0 ->  03-2018 -336.6090738944078
+Financing Cash Flow -> Ausz.Anleihen/Kred -> Sonstige Kredite -> 6660.0 -> 2978.0 ->  03-2018 -10.205305694871132
+Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301.0 -> 9000.0 ->  03-2018 -18.275782677597945
+Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6301.0 -> 1800.0 ->  03-2018 -16.26544658306217
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6495.0 -> 3510.0 ->  03-2018 -9.082722068435308
+Financing Cash Flow -> Ausz.Untern.Eigner -> Ausz.Eigenkapital -> 6495.0 -> 1800.0 ->  03-2018 -14.476247458925332
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 5923.0 -> 3510.0 ->  03-2018 -8.083622640907423
+Investing Cash Flow -> Ausz.Immat.Verm. -> Zugang Immat.Verm. -> 6811.0 -> 3510.0 ->  03-2018 -7.194424150407607
+Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811.0 -> 71100.0 ->  03-2018 -5.698703369537866
+Investing Cash Flow -> Ausz.SAV-Invest. -> Zugang Sachanlagen -> 6811.0 -> 71700.0 ->  03-2018 -6.4030374938627705
